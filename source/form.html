@@ -34,7 +34,8 @@
         <h1 class="section-form__heading">Подбор программы</h1>
         <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="section-form__form form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="form__fieldset form__info">
+          <fieldset class="form__fieldset form__fieldset--info">
+            <!-- кажется, нифига тут филдсеты не будут одинаково верстаться. ладно, посмотрим -->
             <legend class="visually-hidden">Информация о коте.</legend>
             <label class="form__label" for="name">ИМЯ:*</label>
             <input class="form__field" type="text" name="name" id="name" required>
@@ -43,7 +44,7 @@
             <label class="form__label" for="age">Возраст (лет):</label>
             <input class="form__field" type="text" name="age" id="age">
           </fieldset>
-          <fieldset class="form__fieldset form__goal">
+          <fieldset class="form__fieldset form__fieldset--goal">
             <legend class="visually-hidden">Цель подбора питания</legend>
             <ul class="form__list">
               <li class="form__list-item">
@@ -85,28 +86,28 @@
             <legend>Дополнительно</legend>
             <ul class="form__list">
               <li class="form__list-item">
-                <label class="form__list-item--checkbox">
+                <label class="form__list-item form__list-item--checkbox">
                   <input class="visually-hidden form__control-input" type="checkbox" name="sweetener">
                   <span class="form__control-mark form__control-mark--checkbox"></span>
                   <span class="form__control-label">сахарозаменитель</span>
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__list-item--checkbox">
+                <label class="form__list-item form__list-item--checkbox">
                   <input class="visually-hidden form__control-input" type="checkbox" name="water">
                   <span class="form__control-mark form__control-mark--checkbox"></span>
                   <span class="form__control-label">питьевая вода</span>
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__list-item--checkbox">
+                <label class="form__list-item form__list-item--checkbox">
                   <input class="visually-hidden form__control-input" type="checkbox" name="milk">
                   <span class="form__control-mark form__control-mark--checkbox"></span>
                   <span class="form__control-label">молоко</span>
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__list-item--checkbox">
+                <label class="form__list-item form__list-item--checkbox">
                   <input class="visually-hidden form__control-input" type="checkbox" name="vitamins">
                   <span class="form__control-mark form__control-mark--checkbox"></span>
                   <span class="form__control-label">витамины</span>
