@@ -5,118 +5,117 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="header-container">
-      <nav class="header-nav">
-        <a class="header-container__logo-pic" href="index.html">
-          <img src="img/logo-img.svg" width="" height="" alt="Логотип Кэт Энерджи.">
-        </a>
-        <a class="header-container__logo-text" href="index.html">
-          <img src="img/logo-text.svg" width="" height="" alt="Логотип Кэт Энерджи.">
-        </a>
-        <button class="header-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="header-nav__wrapper">
-          <ul class="header-nav__menu menu-list">
-            <li class="menu-list__item menu-list__item--current">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="menu-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="menu-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+    <header class="header">
+      <a class="header__logo-pic" href="index.html">
+        <img src="img/logo-img.svg" width="34" height="37" alt="Логотип Кэт Энерджи.">
+      </a>
+      <a class="header__logo-text" href="index.html">
+        <img src="img/logo-text.svg" width="100" height="18" alt="Логотип Кэт Энерджи.">
+      </a>
+      <button class="header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__menu menu-list">
+          <li class="menu-list__item menu-list__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
-      <section class="select">
-        <h1 class="select">Подбор программы</h1>
+      <section class="section-form">
+        <h1 class="section-form__heading">Подбор программы</h1>
         <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="select__form select-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="select-form__info">
+        <form class="section-form__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="form__fieldset form__info">
             <legend class="visually-hidden">Информация о коте.</legend>
-            <label class="select-form__label" for="name">ИМЯ:*</label>
-            <input type="text" name="name" id="name" required>
-            <label class="select-form__label" for="weight">Вес (кг):*</label>
-            <input type="text" name="weight" id="weight" required>
-            <label class="select-form__label" for="age">Возраст (лет):</label>
-            <input type="text" name="age" id="age">
+            <label class="form__label" for="name">ИМЯ:*</label>
+            <input class="form__field" type="text" name="name" id="name" required>
+            <label class="form__label" for="weight">Вес (кг):*</label>
+            <input class="form__field" type="text" name="weight" id="weight" required>
+            <label class="form__label" for="age">Возраст (лет):</label>
+            <input class="form__field" type="text" name="age" id="age">
           </fieldset>
-          <fieldset class="select-form__goal">
+          <fieldset class="form__fieldset form__goal">
             <legend class="visually-hidden">Цель подбора питания</legend>
-            <ul class="select-form__list">
-              <li class="select-form__list-item">
-                <label class="select-form__control">
-                  <input class="visually-hidden select-form__control-input" type="radio" name="goal" value="slim">
-                  <span class="select-form__control-mark--radio"></span>
-                  <span class="select-form__control-label">Похудение</span>
+            <ul class="form__list">
+              <li class="form__list-item">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="radio" name="goal" value="slim">
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__control-label">Похудение</span>
                 </label>
               </li>
-              <li class="select-form__list-item">
-                <label class="select-form__label-control">
-                  <input class="visually-hidden select-form__control-input" type="radio" name="goal" value="weight-gain">
-                  <span class="select-form__control-mark--radio"></span>
+              <li class="form__list-item">
+                <label class="form__label-control">
+                  <input class="visually-hidden form__control-input" type="radio" name="goal" value="weight-gain">
+                  <span class="form__control-mark form__control-mark--radio"></span>
                   <span class="control-label">Набор массы</span>
                 </label>
               </li>
-              <li class="select-form__list-item">
+              <li class="form__list-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="goal" value="need-advice">
-                  <span class="select-form__control-mark--radio"></span>
+                  <span class="form__control-mark form__control-mark--radio"></span>
                   <span class="control-label">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="select-form__contacts">
+          <fieldset class="form__fieldset">
             <legend>Контактные данные (владельца кота)</legend>
-            <label class="select-form__label" for="email">E-mail:*</label>
+            <label class="form__label" for="email">E-mail:*</label>
             <input type="email" name="email" id="email" required>
-            <label class="select-form__label" for="phone">Телефон:*</label>
+            <label class="form__label" for="phone">Телефон:*</label>
             <input type="tel" name="phone" id="phone" required>
           </fieldset>
-          <fieldset class="select-form__comment">
+          <fieldset class="form__fieldset">
             <legend>Комментарий</legend>
-            <textarea name="comment"></textarea>
+            <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота.</label>
+            <textarea id="comment" name="comment"></textarea>
           </fieldset>
-          <fieldset class="extra">
+          <fieldset class="form__fieldset">
             <legend>Дополнительно</legend>
-            <ul class="select-form__list">
-              <li class="select-form__list-item">
-                <label class="select-form__list-item--checkbox">
-                  <input class="visually-hidden select-form__control-input" type="checkbox" name="sweetener">
-                  <span class="select-form__control-mark--checkbox">
-                  <span class="select-form__control-label">сахарозаменитель</span>
+            <ul class="form__list">
+              <li class="form__list-item">
+                <label class="form__list-item--checkbox">
+                  <input class="visually-hidden form__control-input" type="checkbox" name="sweetener">
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control-label">сахарозаменитель</span>
                 </label>
               </li>
-              <li class="select-form__list-item">
-                <label class="select-form__list-item--checkbox">
-                  <input class="visually-hidden select-form__control-input" type="checkbox" name="water">
-                  <span class="select-form__control-mark--checkbox">
-                  <span class="select-form__control-label">питьевая вода</span>
+              <li class="form__list-item">
+                <label class="form__list-item--checkbox">
+                  <input class="visually-hidden form__control-input" type="checkbox" name="water">
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control-label">питьевая вода</span>
                 </label>
               </li>
-              <li class="select-form__list-item">
-                <label class="select-form__list-item--checkbox">
-                  <input class="visually-hidden select-form__control-input" type="checkbox" name="milk">
-                  <span class="select-form__control-mark--checkbox">
-                  <span class="select-form__control-label">молоко</span>
+              <li class="form__list-item">
+                <label class="form__list-item--checkbox">
+                  <input class="visually-hidden form__control-input" type="checkbox" name="milk">
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control-label">молоко</span>
                 </label>
               </li>
-              <li class="select-form__list-item">
-                <label class="select-form__list-item--checkbox">
-                  <input class="visually-hidden select-form__control-input" type="checkbox" name="vitamins">
-                  <span class="select-form__control-mark--checkbox">
-                  <span class="select-form__control-label">витамины</span>
+              <li class="form__list-item">
+                <label class="form__list-item--checkbox">
+                  <input class="visually-hidden form__control-input" type="checkbox" name="vitamins">
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control-label">витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="select-form__submit" type="submit">отправить заявку</button>
-          <p class="select-form__tip">* — Обязательные поля</p>
+          <button class="form__submit" type="submit">отправить заявку</button>
+          <p class="form__tip">* — Обязательные поля</p>
         </form>
       </section>
       <section class="franchising">
