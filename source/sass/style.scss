@@ -1,1 +1,69 @@
-// Начните писать стили здесь
+@use "menu-list.scss";
+@use "index/promo.scss";
+@use "index/goal.scss";
+@use "main-container.scss";
+@use "index/guide.scss";
+@use "index/guide-list.scss";
+@use "index/results.scss";
+@use "index/gallery.scss";
+@use "franchising.scss";
+@use "footer.scss";
+
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --basic_green: #68B738;
+  --basic_green-2: #5EAA2F;
+  --basic_grey: #F2F2F2;
+  --basic-special_grey-2: #EBEBEB;
+  --special_grey: #CDCDCD;
+  --special_grey-2: #666666;
+  --special_dark-grey: #444444;
+  --special_dark-grey-2: #222222;
+  --status_error: #FF8282;
+  --shadow_normal: 0px 1px 3px rgba(0, 0, 0, 0.16);
+  --shadow_hover: 0px 2px 4px rgba(0, 0, 0, 0.19);
+  --shadow_pressed: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 280px;
+  min-height: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--special_dark-grey);
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
