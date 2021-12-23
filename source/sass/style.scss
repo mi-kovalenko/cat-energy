@@ -21,6 +21,8 @@
 @use "catalog/extra-item.scss";
 @use "catalog/offer.scss";
 @use "buttons/button-submit.scss";
+@use "credits.scss";
+// не пойму, на что ругается линтер
 
 @font-face {
   font-family: "Oswald";
@@ -39,18 +41,18 @@
 }
 
 :root {
-  --basic_green: #68B738;
-  --basic_green-2: #5EAA2F;
-  --basic_grey: #F2F2F2;
-  --basic-special_grey-2: #EBEBEB;
-  --special_grey: #CDCDCD;
+  --basic_green: #68b738;
+  --basic_green-2: #5eaa2f;
+  --basic_grey: #f2f2f2;
+  --basic-special_grey-2: #ebebeb;
+  --special_grey: #cdcdcd;
   --special_grey-2: #666666;
   --special_dark-grey: #444444;
   --special_dark-grey-2: #222222;
-  --status_error: #FF8282;
-  --shadow_normal: 0px 1px 3px rgba(0, 0, 0, 0.16);
-  --shadow_hover: 0px 2px 4px rgba(0, 0, 0, 0.19);
-  --shadow_pressed: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  --status_error: #ff8282;
+  --shadow_normal: 0 1px 3px rgba(0, 0, 0, 0.16);
+  --shadow_hover: 0 2px 4px rgba(0, 0, 0, 0.19);
+  --shadow_pressed: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 html {

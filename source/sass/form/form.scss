@@ -5,6 +5,7 @@
     color: var(--special_dark-grey);
     border-bottom: 1px solid #d9d9d9;
   }
+
   &--goal {
     color: var(--special_dark-grey-2);
     border-bottom: 1px solid #d9d9d9;
@@ -21,33 +22,20 @@
   color: var(--special_dark-grey);
 }
 
-.form__field {
-
-}
-
-.form__list {
-
-}
-
-.form__list-item {
-
-}
-
-.form__control {
-
-}
-
-.form__control-mark {
-
-&--radio {
-}
-}
-
 .form__submit {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.form__tip {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  color: #000000;
 }

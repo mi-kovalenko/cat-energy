@@ -1,3 +1,10 @@
+.franchising {
+  padding: 26px 20px;
+  background-color: var(--basic_grey);
+  // background-color: #FFFFFF;
+  // на внутренней странице фон белый. я бы сделала модификатором, но это не по бэм. как лучше?
+}
+
 .franchising__heading {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
