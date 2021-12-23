@@ -1,0 +1,18 @@
+.card-show-more {
+  border-bottom: 1px solid var(--basic-special_grey-2);
+}
+
+.card-show-more__heading {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--special_dark-grey-2);
+}
+
+.card-show-more__description {
+  font-size: 12px;
+  line-height: 16px;
+}

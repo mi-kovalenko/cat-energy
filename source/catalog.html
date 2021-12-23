@@ -7,25 +7,27 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo-pic" href="index.html">
-        <img src="img/logo-img.svg" width="34" height="37" alt="Логотип Кэт Энерджи.">
-      </a>
-      <a class="header__logo-text" href="index.html">
-        <img src="img/logo-text.svg" width="100" height="18" alt="Логотип Кэт Энерджи.">
-      </a>
-      <button class="header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="header__container">
+        <a class="header__logo-pic" href="index.html">
+          <img src="img/logo-img.svg" width="34" height="37" alt="Логотип Кэт Энерджи.">
+        </a>
+        <a class="header__logo-text" href="index.html">
+          <img src="img/logo-text.svg" width="100" height="18" alt="Логотип Кэт Энерджи.">
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="header__nav">
         <ul class="header__menu menu-list">
           <li class="menu-list__item menu-list__item--current">
-            <a href="index.html">Главная</a>
+            <a class="menu-list__link" href="index.html">Главная</a>
           </li>
           <li class="menu-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="menu-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="menu-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -36,7 +38,7 @@
         <ul class="products-list">
           <li class="products-list__item product-card">
             <a class="product-card__link" href="#">
-              <img class="product-card__img" src="" width="" height="" alt="">
+              <img class="product-card__img" src="img/catalog/chicken-pro500.jpg" width="" height="" alt="">
               <h3 class="product-card__name">Cat Energy PRO 500 г</h3>
             </a>
             <div class="product-card__info">
@@ -48,7 +50,7 @@
           </li>
           <li class="products-list__item product-card">
             <a class="product-card__link" href="#">
-              <img class="product-card__img" src="" width="" height="" alt="">
+              <img class="product-card__img" src="img/catalog/chicken-pro1000.jpg" width="" height="" alt="">
               <h3 class="product-card__name">Cat Energy PRO 1000 г</h3>
             </a>
             <div class="product-card__info">
@@ -60,7 +62,7 @@
           </li>
           <li class="products-list__item product-card">
             <a class="product-card__link" href="#">
-              <img class="product-card__img" src="" width="" height="" alt="">
+              <img class="product-card__img" src="img/catalog/fish-pro500.jpg" width="" height="" alt="">
               <h3 class="product-card__name">Cat Energy PRO 500 г</h3>
             </a>
             <div class="product-card__info">
@@ -72,7 +74,7 @@
           </li>
           <li class="products-list__item product-card">
             <a class="product-card__link" href="#">
-              <img class="product-card__img" src="" width="" height="" alt="">
+              <img class="product-card__img" src="img/catalog/fish-pro1000.png" width="" height="" alt="">
               <h3 class="product-card__name">Cat Energy PRO 1000 г</h3>
             </a>
             <div class="product-card__info">
@@ -84,7 +86,7 @@
           </li>
           <li class="products-list__item product-card">
             <a class="product-card__link" href="#">
-              <img class="product-card__img" src="" width="" height="" alt="">
+              <img class="product-card__img" src="img/catalog/buckwheat-slim500.jpg" width="" height="" alt="">
               <h3 class="product-card__name">Cat Energy SLIM 500 г</h3>
             </a>
             <div class="product-card__info">
@@ -96,7 +98,7 @@
           </li>
           <li class="products-list__item product-card">
             <a class="product-card__link" href="#">
-              <img class="product-card__img" src="" width="" height="" alt="">
+              <img class="product-card__img" src="img/catalog/buckwheat-slim1000.jpg" width="" height="" alt="">
               <h3 class="product-card__name">Cat Energy SLIM 1000 г</h3>
             </a>
             <div class="product-card__info">
@@ -108,7 +110,7 @@
           </li>
           <li class="products-list__item product-card">
             <a class="product-card__link" href="#">
-              <img class="product-card__img" src="" width="" height="" alt="">
+              <img class="product-card__img" src="img/catalog/rice-slim500.jpg" width="" height="" alt="">
               <h3 class="product-card__name">Cat Energy SLIM 500 г</h3>
             </a>
             <div class="product-card__info">
@@ -119,9 +121,9 @@
             <a class="product-card__button button-order" href="#">заказать</a>
           </li>
           <li class="products-list__item card-show-more">
-            <h3>Показать еще 100500 товаров</h3>
-            <p>На самом деле вкусов гораздо больше!</p>
-            <a class="card-show-more__button" href="#">показать все</a>
+            <h3 class="card-show-more__heading">Показать еще 100500 товаров</h3>
+            <p class="card-show-more__description">На самом деле вкусов гораздо больше!</p>
+            <a class="card-show-more__button button-show-all" href="#">показать все</a>
           </li>
         </ul>
         <h2 class="catalog__subtitle">Дополнительные товары</h2>
@@ -150,7 +152,7 @@
       </section>
       <section class="offer">
         <h2 class="visually-hidden">Выгодные предложения</h2>
-        <p>Закажите все и получите чехол для кота в подарок!</p>
+        <p class="offer__text">Закажите все и получите чехол для кота в подарок!</p>
       </section>
       <section class="franchising">
         <h2 class="franchising__heading">приглашаем к сотрудничеству дилеров!</h2>

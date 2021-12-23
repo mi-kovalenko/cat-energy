@@ -7,25 +7,27 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo-pic" href="index.html">
-        <img src="img/logo-img.svg" width="34" height="37" alt="Логотип Кэт Энерджи.">
-      </a>
-      <a class="header__logo-text" href="index.html">
-        <img src="img/logo-text.svg" width="100" height="18" alt="Логотип Кэт Энерджи.">
-      </a>
-      <button class="header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="header__container">
+        <a class="header__logo-pic" href="index.html">
+          <img src="img/logo-img.svg" width="34" height="37" alt="Логотип Кэт Энерджи.">
+        </a>
+        <a class="header__logo-text" href="index.html">
+          <img src="img/logo-text.svg" width="100" height="18" alt="Логотип Кэт Энерджи.">
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="header__nav">
         <ul class="header__menu menu-list">
           <li class="menu-list__item menu-list__item--current">
-            <a href="index.html">Главная</a>
+            <a class="menu-list__link" href="index.html">Главная</a>
           </li>
           <li class="menu-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="menu-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="menu-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -33,7 +35,7 @@
     <main class="main-container">
       <section class="section-form">
         <h1 class="section-form__heading">Подбор программы</h1>
-        <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="section-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="section-form__form form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__fieldset form__fieldset--info">
             <!-- кажется, нифига тут филдсеты не будут одинаково верстаться. ладно, посмотрим -->
@@ -72,19 +74,19 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend>Контактные данные (владельца кота)</legend>
+            <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <label class="form__label" for="email">E-mail:*</label>
             <input type="email" name="email" id="email" required>
             <label class="form__label" for="phone">Телефон:*</label>
             <input type="tel" name="phone" id="phone" required>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend>Комментарий</legend>
+            <legend class="form__legend">Комментарий</legend>
             <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота.</label>
             <textarea id="comment" name="comment"></textarea>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend>Дополнительно</legend>
+            <legend class="form__legend">Дополнительно</legend>
             <ul class="form__list">
               <li class="form__list-item">
                 <label class="form__list-item form__list-item--checkbox">
@@ -116,7 +118,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__submit" type="submit">отправить заявку</button>
+          <button class="form__submit button-submit" type="submit">отправить заявку</button>
           <p class="form__tip">* — Обязательные поля</p>
         </form>
       </section>

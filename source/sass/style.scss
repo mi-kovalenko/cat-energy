@@ -1,5 +1,7 @@
+@use "header.scss";
 @use "menu-list.scss";
 @use "index/promo.scss";
+@use "index/goals.scss";
 @use "index/goal.scss";
 @use "main-container.scss";
 @use "index/guide.scss";
@@ -8,7 +10,17 @@
 @use "index/gallery.scss";
 @use "franchising.scss";
 @use "footer.scss";
-
+@use "socials.scss";
+@use "form/section-form.scss";
+@use "form/form.scss";
+@use "catalog/catalog.scss";
+@use "catalog/product-card.scss";
+@use "buttons/button-order.scss";
+@use "catalog/card-show-more.scss";
+@use "buttons/button-show-all.scss";
+@use "catalog/extra-item.scss";
+@use "catalog/offer.scss";
+@use "buttons/button-submit.scss";
 
 @font-face {
   font-family: "Oswald";
@@ -59,6 +71,7 @@ body {
   color: var(--special_dark-grey);
   background-color: #ffffff;
 }
+
 
 .visually-hidden {
   position: absolute;

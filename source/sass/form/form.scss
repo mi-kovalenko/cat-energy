@@ -1,0 +1,53 @@
+.form__fieldset {
+  border: none;
+
+  &--info {
+    color: var(--special_dark-grey);
+    border-bottom: 1px solid #d9d9d9;
+  }
+  &--goal {
+    color: var(--special_dark-grey-2);
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.form__label {
+  color: var(--special_dark-grey);
+}
+
+.form__field {
+
+}
+
+.form__list {
+
+}
+
+.form__list-item {
+
+}
+
+.form__control {
+
+}
+
+.form__control-mark {
+
+&--radio {
+}
+}
+
+.form__submit {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
