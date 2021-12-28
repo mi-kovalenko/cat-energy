@@ -1,11 +1,11 @@
 .results {
   background-color: #eaeaea;
-  padding: 0 20px;
+
+  @include container-padding;
 }
 
 .results__heading {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
@@ -13,7 +13,6 @@
 
 .results__figure {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -21,9 +20,6 @@
 }
 
 .results__description {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
@@ -32,7 +28,6 @@
 
 .results__cost {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;

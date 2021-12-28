@@ -1,13 +1,17 @@
 .franchising {
   padding: 26px 20px;
-  background-color: var(--basic_grey);
-  // background-color: #FFFFFF;
-  // на внутренней странице фон белый. я бы сделала модификатором, но это не по бэм. как лучше?
+
+  &--index {
+    background-color: var(--basic_grey);
+  }
+
+  &--inner {
+    background-color: #ffffff;
+  }
 }
 
 .franchising__heading {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -15,9 +19,6 @@
 }
 
 .franchising__address {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: var(--special_dark-grey);
