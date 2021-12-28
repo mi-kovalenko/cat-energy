@@ -1,14 +1,15 @@
-.franchising {
+.franchising__container {
   padding: 26px 20px;
 
   &--index {
-    background-color: var(--basic_grey);
+    background-color: #ffffff;
   }
 
   &--inner {
-    background-color: #ffffff;
+    background-color: var(--basic_grey);
   }
 }
+// не применяется. не понимаю, что не так
 
 .franchising__heading {
   font-family: "Oswald", sans-serif;
