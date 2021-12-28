@@ -1,84 +1,25 @@
-@use "header.scss";
-@use "menu-list.scss";
-@use "index/promo.scss";
-@use "index/goals.scss";
-@use "index/goal.scss";
-@use "main-container.scss";
-@use "index/guide.scss";
-@use "index/guide-list.scss";
-@use "index/results.scss";
-@use "index/gallery.scss";
-@use "franchising.scss";
-@use "footer.scss";
-@use "socials.scss";
-@use "form/section-form.scss";
-@use "form/form.scss";
-@use "catalog/catalog.scss";
-@use "catalog/product-card.scss";
-@use "buttons/button-order.scss";
-@use "catalog/card-show-more.scss";
-@use "buttons/button-show-all.scss";
-@use "catalog/extra-item.scss";
-@use "catalog/offer.scss";
-@use "buttons/button-submit.scss";
-@use "credits.scss";
-// не пойму, на что ругается линтер
-
-@font-face {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-
-:root {
-  --basic_green: #68b738;
-  --basic_green-2: #5eaa2f;
-  --basic_grey: #f2f2f2;
-  --basic-special_grey-2: #ebebeb;
-  --special_grey: #cdcdcd;
-  --special_grey-2: #666666;
-  --special_dark-grey: #444444;
-  --special_dark-grey-2: #222222;
-  --status_error: #ff8282;
-  --shadow_normal: 0 1px 3px rgba(0, 0, 0, 0.16);
-  --shadow_hover: 0 2px 4px rgba(0, 0, 0, 0.19);
-  --shadow_pressed: 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 280px;
-  min-height: 100%;
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--special_dark-grey);
-  background-color: #ffffff;
-}
-
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+@import url("global.scss");
+@import url("fonts.scss");
+@import url("custom-properties.scss");
+@import url("buttons.scss");
+@import url("main-container.scss");
+@import url("header.scss");
+@import url("menu-list.scss");
+@import url("franchising.scss");
+@import url("footer.scss");
+@import url("socials.scss");
+@import url("credits.scss");
+@import url("promo.scss");
+@import url("goals.scss");
+@import url("goal.scss");
+@import url("guide.scss");
+@import url("guide-list.scss");
+@import url("results.scss");
+@import url("gallery.scss");
+@import url("section-form.scss");
+@import url("form.scss");
+@import url("catalog.scss");
+@import url("product-card.scss");
+@import url("card-show-more.scss");
+@import url("extra-item.scss");
+@import url("offer.scss");
