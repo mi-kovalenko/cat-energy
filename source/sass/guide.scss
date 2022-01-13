@@ -1,0 +1,12 @@
+.guide {
+  margin-bottom: 50px;
+
+  @include container-padding;
+}
+
+.guide__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}

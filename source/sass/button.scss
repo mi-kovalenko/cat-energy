@@ -1,0 +1,20 @@
+.button {
+  padding: 7px 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+
+  &--primary {
+    color: #ffffff;
+    background-color: var(--basic_green);
+  }
+
+  &--secondary {
+    color: var(--special-dark-grey);
+    background-color: var(--basic_grey);
+  }
+}

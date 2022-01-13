@@ -1,0 +1,17 @@
+.extra-item {
+  border-bottom: 1px solid var(--special_grey);
+}
+
+.extra-item__heading-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--special_dark-grey-2);
+}
+
+.extra-item__info {
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--special_dark-grey);
+}

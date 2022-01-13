@@ -1,0 +1,21 @@
+.catalog {
+  margin-bottom: 35px;
+
+  @include container-padding;
+}
+
+.catalog__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  border-bottom: 1px solid var(--basic-special_grey-2);
+}
+
+.catalog__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  border-bottom: 1px solid var(--special_grey);
+}

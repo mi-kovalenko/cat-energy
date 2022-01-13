@@ -1,0 +1,30 @@
+.franchising__container {
+  padding: 26px 20px;
+
+  &--index {
+    background-color: #ffffff;
+  }
+
+  &--inner {
+    background-color: var(--basic_grey);
+  }
+}
+// не применяется. не понимаю, что не так
+
+.franchising__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  color: #111111;
+}
+
+
+.franchising__address {
+  font-size: 14px;
+  line-height: 20px;
+
+  color: var(--special_dark-grey);
+}

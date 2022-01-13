@@ -1,0 +1,36 @@
+.goal {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--basic_grey);
+}
+
+.goal__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  &--slim {
+    padding-left: 70px;
+    background-image: url("../../img/cat-slim.svg");
+    background-size: 50px;
+  }
+
+  &--pro {
+    padding-left: 80px;
+    background-image: url("../../img/cat-pro.svg");
+    background-size: 67px;
+  }
+}
+
+.goal__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}

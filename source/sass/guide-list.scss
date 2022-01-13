@@ -1,0 +1,28 @@
+.guide-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.guide-list__item {
+  padding-left: 80px;
+  background-position: left;
+  background-size: 60px;
+  background-repeat: no-repeat;
+
+  &--leaf {
+    background-image: url("../../img/guide-leaf.svg");
+  }
+
+  &--water {
+    background-image: url("../../img/guide-water.svg");
+  }
+
+  &--meal {
+    background-image: url("../../img/guide-meal.svg");
+  }
+
+  &--time {
+    background-image: url("../../img/guide-time.svg");
+  }
+}
