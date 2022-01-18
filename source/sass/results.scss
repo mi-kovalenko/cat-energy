@@ -1,12 +1,13 @@
 .results {
-  background-color: #eaeaea;
-
   @include container-padding;
+
+  background-color: #eaeaea;
 }
 
 .results__heading {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
   color: #000000;
 }
