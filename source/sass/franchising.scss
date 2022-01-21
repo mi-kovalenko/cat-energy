@@ -1,3 +1,7 @@
+.franchising {
+  width: 100%;
+}
+
 .franchising__container {
   padding: 26px 20px;
 
@@ -21,12 +25,16 @@
   color: #111111;
 }
 
-
 .franchising__address {
   font-size: 14px;
   line-height: 20px;
 
   color: var(--special_dark-grey);
+}
+
+.franchising__map iframe {
+  display: block;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {

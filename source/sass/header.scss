@@ -1,13 +1,6 @@
 .header {
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    border: none;
-  }
 }
 
 .header__container {
@@ -16,14 +9,29 @@
   align-items: center;
   padding: 10px 20px 20px 20px;
   border-bottom: 1px solid #d9d9d9;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     border: none;
+  }
+
+  .header__container {
+    border: none;
+  }
+
+  .header__toggle {
+    display: none;
   }
 }
 
-.header__toggle {
-  @media (min-width: $tablet-width) {
-    display: none;
+@media (min-width: $desktop-width) {
+  .header {
+    position: absolute;
+    top: 0;
+    z-index: 2;
   }
 }

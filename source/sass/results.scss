@@ -50,3 +50,13 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .results {
+    display: flex;
+  }
+
+  .results__wrap {
+    display: block;
+  }
+}

@@ -21,15 +21,14 @@
 
 @media (min-width: $tablet-width) {
   .extra-item__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra-item {
     display: grid;
-    grid-template-columns: 25% 25% 100px 25%;
+    grid-template-columns: 2fr 1fr;
   }
-
 }

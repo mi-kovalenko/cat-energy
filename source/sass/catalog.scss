@@ -1,5 +1,6 @@
 .catalog {
   @include container-padding-mobile;
+  @include container-fill-width;
 
   margin-bottom: 35px;
 }

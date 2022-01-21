@@ -1,5 +1,6 @@
 .guide {
   @include container-padding-mobile;
+  @include container-fill-width;
 
   margin-bottom: 50px;
 }

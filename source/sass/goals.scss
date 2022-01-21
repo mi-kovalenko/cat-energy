@@ -1,5 +1,6 @@
 .goals {
   @include container-padding-mobile;
+  @include container-fill-width;
 }
 
 @media (min-width: $tablet-width) {
