@@ -1,3 +1,7 @@
-@mixin container-padding {
+@mixin container-padding-mobile {
   padding: 0 20px;
+}
+
+@mixin container-padding-tablet {
+  padding: 0 30px;
 }

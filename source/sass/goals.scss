@@ -1,3 +1,9 @@
 .goals {
-  @include container-padding;
+  @include container-padding-mobile;
+}
+
+@media (min-width: $tablet-width) {
+  .goals {
+    @include container-padding-tablet;
+  }
 }

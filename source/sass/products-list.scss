@@ -3,3 +3,17 @@
   padding: 0;
   list-style-type: none;
 }
+
+@media (min-width: $tablet-width) {
+  .products-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

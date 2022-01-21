@@ -5,6 +5,9 @@
 }
 
 .goal__heading {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 10px 0;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -27,11 +30,55 @@
   }
 }
 
+.goal__text {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
 .goal__link {
+  display: block;
+  padding-top: 15px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  border-top: 1px solid #d9d9d9;
+}
+
+@media (min-width: $tablet-width) {
+  .goal {
+    padding: 53px;
+    padding-top: 77px;
+    padding-right: 316px;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    &--slim {
+      background-image: url("../../img/cat-slim.svg");
+      background-size: 200px;
+    }
+
+    &--pro {
+      background-image: url("../../img/cat-pro.svg");
+      background-size: 267px;
+    }
+  }
+
+  // мне не очень нравится эта конструкция, честно говоря. и работает она странно
+
+  .goal__heading {
+    padding: 0;
+    background-image: none;
+  }
+
+  .goal__text {
+    width: 340px;
+    margin-bottom: 33px;
+  }
+
+  .goal__link {
+    border: none;
+  }
 }

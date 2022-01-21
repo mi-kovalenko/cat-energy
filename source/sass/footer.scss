@@ -1,5 +1,7 @@
 .footer {
+  box-sizing: border-box;
   width: 100%;
+  padding: 0 20px;
   background-color: var(--basic_grey);
 }
 
@@ -7,4 +9,16 @@
   width: fit-content;
   padding: 39px 0 32px 0;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    padding: 55px 30px;
+  }
+
+  .footer__logo {
+    margin: 0;
+    padding: 0;
+  }
 }

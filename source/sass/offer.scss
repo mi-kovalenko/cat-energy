@@ -12,3 +12,10 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media (min-width: $desktop-width) {
+  .offer {
+    display: inline-block;
+    width: 25%;
+  }
+}

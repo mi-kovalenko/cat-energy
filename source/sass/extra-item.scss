@@ -12,7 +12,15 @@
 }
 
 .extra-item__info {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
   color: var(--special_dark-grey);
+}
+
+@media (min-width: $desktop-width) {
+  .extra-item {
+    display: flex;
+  }
 }

@@ -1,4 +1,11 @@
 .credits {
   display: flex;
-  padding: 22px 20px;
+  justify-content: space-between;
+  padding: 22px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .credits {
+    padding: 0;
+  }
 }

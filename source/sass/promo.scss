@@ -7,6 +7,8 @@
 }
 
 .promo__heading {
+  margin: 0;
+  margin-bottom: 25px;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 400;
@@ -16,6 +18,8 @@
 }
 
 .promo__slogan {
+  margin: 0;
+  margin-bottom: 29px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -27,4 +31,36 @@
 .promo__button {
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: none;
+  }
+
+  .promo__heading {
+    color: #000000;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo__slogan {
+    color: #000000;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .promo__button {
+    position: absolute;
+    top: 295px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    position: relative;
+    top: -100px;
+  }
 }

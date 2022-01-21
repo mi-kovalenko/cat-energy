@@ -28,3 +28,22 @@
 
   color: var(--special_dark-grey);
 }
+
+@media (min-width: $tablet-width) {
+  .franchising__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .franchising {
+    position: relative;
+  }
+
+  .franchising__container {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+}

@@ -1,5 +1,5 @@
 .results {
-  @include container-padding;
+  @include container-padding-mobile;
 
   background-color: #eaeaea;
 }
@@ -27,6 +27,10 @@
   color: var(--special_dark-grey);
 }
 
+.results__stats-wrap {
+  display: flex;
+}
+
 .results__cost {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
@@ -34,4 +38,15 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.results__gallery {
+  border: 1px solid #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .results__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
 }
