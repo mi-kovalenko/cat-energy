@@ -49,9 +49,7 @@
 
 @media (min-width: $tablet-width) {
   .goal {
-    padding: 53px;
-    padding-top: 77px;
-    padding-right: 316px;
+    padding: 77px 316px 53px 53px;
     background-position: right;
     background-repeat: no-repeat;
 
@@ -65,8 +63,7 @@
       background-size: 267px;
     }
   }
-
-  // мне не очень нравится эта конструкция, честно говоря. и работает она странно
+  // мне не очень нравится эта конструкция, честно говоря
 
   .goal__heading {
     padding: 0;
@@ -80,5 +77,27 @@
 
   .goal__link {
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goal {
+    padding: 77px 51px 55px 52px;
+
+    &--slim {
+      background-image: url("../../img/cat-slim.svg");
+      background-size: 100px;
+      background-position: 52px 41px;
+    }
+
+    &--pro {
+      background-image: url("../../img/cat-pro.svg");
+      background-size: 134px;
+      background-position: 41px 47px;
+    }
+  }
+
+  .goal__heading {
+    margin-left: 162px;
   }
 }

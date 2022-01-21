@@ -30,12 +30,13 @@
 
 @media (min-width: $tablet-width) {
   .guide-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 130px;
   }
 
   .guide-list__item {
-    max-width: 250px;
+    min-width: 230px;
     margin-bottom: 77px;
     padding: 0;
     padding-top: 110px;
@@ -58,9 +59,17 @@
     &--time {
       background-image: url("../img/time-tablet.svg"), url("../img/4.png");
     }
-
-    &:nth-of-type(odd) {
-      margin-right: 137px;
-    }
   }
+}
+
+@media (min-width: $desktop-width) {
+  .guide-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
+
+  .guide-list__item {
+    max-width: 230px;
+  }
+
 }

@@ -7,3 +7,11 @@
     @include container-padding-tablet;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .goals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}

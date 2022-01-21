@@ -19,8 +19,17 @@
   color: var(--special_dark-grey);
 }
 
+@media (min-width: $tablet-width) {
+  .extra-item__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .extra-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 25% 100px 25%;
   }
+
 }
