@@ -1,7 +1,6 @@
-.promo {
-  @include container-fill-width;
+.promo__section-container {
+  @include container;
   margin-bottom: 20px;
-  padding: 27px 35px 0 35px;
   background-image: url("../../img/promo-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -35,7 +34,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo {
+  .promo__section-container {
     background-image: none;
   }
 
@@ -53,8 +52,29 @@
     line-height: 20px;
   }
 
+  .promo__img {
+    margin-bottom: -300px;
+  }
+
   .promo__button {
-    position: absolute;
-    top: 295px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 300px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 100%;
+    background-image: url("../../img/promo-background.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .promo__img {
+    position: absolute;
+    right: 100px;
+  }
+}
+

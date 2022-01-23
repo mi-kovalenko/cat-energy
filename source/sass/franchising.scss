@@ -27,6 +27,7 @@
 
 .franchising__address {
   font-size: 14px;
+  font-style: normal;
   line-height: 20px;
 
   color: var(--special_dark-grey);
@@ -45,13 +46,21 @@
 }
 
 @media (min-width: $desktop-width) {
-  .franchising {
-    position: relative;
-  }
+  // .franchising {
+  //   position: relative;
+  // }
+
+  // .franchising__container {
+  //   position: absolute;
+  //   top: 95px;
+  //   left: 110px;
+  // }
 
   .franchising__container {
-    position: absolute;
-    top: 95px;
-    left: 110px;
+    @include container;
+    position: relative;
+    z-index: 2;
+    margin-top: 152px;
+    margin-bottom: -200px;
   }
 }

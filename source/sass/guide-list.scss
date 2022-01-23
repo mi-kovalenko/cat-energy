@@ -33,6 +33,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 130px;
+
+    counter-reset: li;
   }
 
   .guide-list__item {
@@ -41,23 +43,36 @@
     padding: 0;
     padding-top: 110px;
     padding-bottom: 47px;
-    background-position: top left, right;
-    background-size: 80px, contain;
+    background-position: top left;
+    background-size: 80px;
 
     &--leaf {
-      background-image: url("../img/leaf-tablet.svg"), url("../img/1.png");
+      background-image: url("../img/leaf-tablet.svg");
     }
 
     &--water {
-      background-image: url("../img/water-tablet.svg"), url("../img/2.png");
+      background-image: url("../img/water-tablet.svg");
     }
 
     &--meal {
-      background-image: url("../img/meal-tablet.svg"), url("../img/3.png");
+      background-image: url("../img/meal-tablet.svg");
     }
 
     &--time {
-      background-image: url("../img/time-tablet.svg"), url("../img/4.png");
+      background-image: url("../img/time-tablet.svg");
+    }
+
+    &:after {
+      position: absolute;
+      transform: translate(100%, -82%);
+      z-index: -1;
+      content: counter(li);
+      counter-increment: li;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #F2F2F2;
     }
   }
 }
@@ -70,5 +85,6 @@
 
   .guide-list__item {
     max-width: 230px;
+    margin-bottom: 0;
   }
 }

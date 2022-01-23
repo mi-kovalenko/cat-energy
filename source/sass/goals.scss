@@ -1,12 +1,5 @@
 .goals {
-  @include container-padding-mobile;
-  @include container-fill-width;
-}
-
-@media (min-width: $tablet-width) {
-  .goals {
-    @include container-padding-tablet;
-  }
+  @include container;
 }
 
 @media (min-width: $desktop-width) {

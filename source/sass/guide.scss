@@ -1,6 +1,5 @@
 .guide {
-  @include container-padding-mobile;
-  @include container-fill-width;
+  @include container;
 
   margin-bottom: 50px;
 }
@@ -15,8 +14,3 @@
   color: #000000;
 }
 
-@media (min-width: $tablet-width) {
-  .guide {
-    @include container-padding-tablet;
-  }
-}

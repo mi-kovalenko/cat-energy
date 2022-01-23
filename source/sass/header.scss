@@ -13,9 +13,10 @@
 
 @media (min-width: $tablet-width) {
   .header {
+    @include container;
+
     display: flex;
     justify-content: space-between;
-    width: 100%;
     border: none;
   }
 

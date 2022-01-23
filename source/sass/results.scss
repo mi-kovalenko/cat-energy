@@ -1,7 +1,10 @@
 .results {
-  @include container-padding-mobile;
-
+  width: 100%;
   background-color: #eaeaea;
+}
+
+.results__section-container {
+  @include container;
 }
 
 .results__heading {
@@ -52,7 +55,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .results {
+  .results__section-container {
     display: flex;
   }
 
