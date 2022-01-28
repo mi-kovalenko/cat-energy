@@ -62,7 +62,7 @@
       background-image: url("../img/time-tablet.svg");
     }
 
-    &:after {
+    &::after {
       position: absolute;
       transform: translate(100%, -82%);
       z-index: -1;
@@ -72,7 +72,7 @@
       font-weight: 400;
       font-size: 280px;
       line-height: 280px;
-      color: #F2F2F2;
+      color: var(--basic_grey);
     }
   }
 }

@@ -1,8 +1,10 @@
 .footer {
-  box-sizing: border-box;
   width: 100%;
-  padding: 0 20px;
   background-color: var(--basic_grey);
+}
+
+.footer__container {
+  @include container;
 }
 
 .footer__logo {
@@ -12,7 +14,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
+  .footer__container {
     display: flex;
     padding: 55px 30px;
   }

@@ -35,6 +35,8 @@
 
 @media (min-width: $tablet-width) {
   .promo__section-container {
+    display: flex;
+    flex-direction: column;
     background-image: none;
   }
 
@@ -53,28 +55,35 @@
   }
 
   .promo__img {
-    margin-bottom: -300px;
+    order: 10;
+    margin-top: -83px;
   }
 
   .promo__button {
     position: relative;
     z-index: 2;
-    margin-bottom: 300px;
+    width: fit-content;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
     width: 100%;
+    min-height: 696px;
     background-image: url("../../img/promo-background.jpg");
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
+  .promo__section-container {
+    position: relative;
+  }
+
   .promo__img {
     position: absolute;
-    right: 100px;
+    right: 220px;
+    top: 141px;
+    margin-top: 0;
   }
 }
-

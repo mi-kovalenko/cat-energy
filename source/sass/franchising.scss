@@ -46,21 +46,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .franchising {
-  //   position: relative;
-  // }
-
-  // .franchising__container {
-  //   position: absolute;
-  //   top: 95px;
-  //   left: 110px;
-  // }
+  .franchising {
+    position: relative;
+  }
 
   .franchising__container {
     @include container;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-610px, -50%) translateY(-6px);
     z-index: 2;
-    margin-top: 152px;
-    margin-bottom: -200px;
+    width: 565px;
   }
 }
