@@ -1,6 +1,9 @@
+.promo {
+  margin-bottom: 20px;
+}
+
 .promo__section-container {
   @include container;
-  margin-bottom: 20px;
   background-image: url("../../img/promo-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -78,6 +81,8 @@
 
   .promo__section-container {
     position: relative;
+    padding-top: 223px;
+    padding-right: calc(50% + 115px);
   }
 
   .promo__img {
