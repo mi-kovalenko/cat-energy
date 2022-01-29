@@ -5,24 +5,86 @@
 }
 
 .guide-list__item {
+  min-height: 60px;
   padding-left: 80px;
   background-position: left;
   background-size: 60px;
   background-repeat: no-repeat;
 
   &--leaf {
-    background-image: url("../../img/guide-leaf.svg");
+    background-image: url("../img/guide-leaf.svg");
   }
 
   &--water {
-    background-image: url("../../img/guide-water.svg");
+    background-image: url("../img/guide-water.svg");
   }
 
   &--meal {
-    background-image: url("../../img/guide-meal.svg");
+    background-image: url("../img/guide-meal.svg");
   }
 
   &--time {
     background-image: url("../../img/guide-time.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .guide-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 130px;
+
+    counter-reset: li;
+  }
+
+  .guide-list__item {
+    min-width: 230px;
+    margin-bottom: 77px;
+    padding: 0;
+    padding-top: 110px;
+    padding-bottom: 47px;
+    background-position: top left;
+    background-size: 80px;
+
+    &--leaf {
+      background-image: url("../img/leaf-tablet.svg");
+    }
+
+    &--water {
+      background-image: url("../img/water-tablet.svg");
+    }
+
+    &--meal {
+      background-image: url("../img/meal-tablet.svg");
+    }
+
+    &--time {
+      background-image: url("../img/time-tablet.svg");
+    }
+
+    &::after {
+      position: absolute;
+      transform: translate(100%, -82%);
+      z-index: -1;
+      content: counter(li);
+      counter-increment: li;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: var(--basic_grey);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .guide-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
+
+  .guide-list__item {
+    max-width: 230px;
+    margin-bottom: 0;
   }
 }

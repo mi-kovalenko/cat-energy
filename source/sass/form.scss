@@ -1,4 +1,7 @@
 .form__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   border: none;
 
   &--info {
@@ -23,6 +26,7 @@
 }
 
 .form__submit {
+  width: 100%;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -35,4 +39,25 @@
   line-height: 16px;
   text-transform: none;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .form__list {
+    &--extra {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .form__submit-wrap {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__list {
+    &--extra {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
 }

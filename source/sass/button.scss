@@ -1,5 +1,6 @@
 .button {
-  padding: 7px 0;
+  display: block;
+  padding: 14px 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -16,5 +17,11 @@
   &--secondary {
     color: var(--special-dark-grey);
     background-color: var(--basic_grey);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
   }
 }

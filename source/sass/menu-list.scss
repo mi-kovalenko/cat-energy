@@ -1,13 +1,23 @@
 .menu-list {
+  display: none;
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .menu-list__item {
   padding: 22px 0 24px 0;
   border-bottom: 1px solid #d9d9d9;
+  text-align: center;
 }
 
 .menu-list__link {
+  display: inline-block;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 20px;

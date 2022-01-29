@@ -1,12 +1,16 @@
 .results {
+  width: 100%;
   background-color: #eaeaea;
+}
 
-  @include container-padding;
+.results__section-container {
+  @include container;
 }
 
 .results__heading {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
   color: #000000;
 }
@@ -26,6 +30,10 @@
   color: var(--special_dark-grey);
 }
 
+.results__stats-wrap {
+  display: flex;
+}
+
 .results__cost {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
@@ -33,4 +41,25 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.results__gallery {
+  border: 1px solid #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .results__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .results__section-container {
+    display: flex;
+  }
+
+  .results__wrap {
+    display: block;
+  }
 }
