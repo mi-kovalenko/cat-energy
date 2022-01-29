@@ -61,6 +61,7 @@
 
 @media (min-width: $desktop-width) {
   .form__fieldset-wrapper {
+    @include container;
     display: flex;
     flex-wrap: wrap;
   }
@@ -75,5 +76,9 @@
     &--extra {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+  }
+
+  .form__submit-wrap {
+    @include container;
   }
 }
