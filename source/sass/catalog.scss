@@ -21,3 +21,9 @@
   color: #000000;
   border-bottom: 1px solid var(--special_grey);
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 188px;
+  }
+}
