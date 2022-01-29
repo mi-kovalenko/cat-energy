@@ -40,90 +40,100 @@
         <form class="section-form__form form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__fieldset-wrapper">
             <fieldset class="form__fieldset form__fieldset--info">
-              <legend class="visually-hidden">Информация о коте.</legend>
-              <label class="form__label" for="name">ИМЯ:*
-                <input class="form__field" type="text" name="name" id="name" required>
-              </label>
-              <label class="form__label" for="weight">Вес (кг):*
-                <input class="form__field" type="text" name="weight" id="weight" required>
-              </label>
-              <label class="form__label" for="age">Возраст (лет):
-                <input class="form__field" type="text" name="age" id="age">
-              </label>
+              <div class="form__fieldset-container">
+                <legend class="visually-hidden">Информация о коте.</legend>
+                <label class="form__label" for="name">ИМЯ:*
+                  <input class="form__field" type="text" name="name" id="name" required>
+                </label>
+                <label class="form__label" for="weight">Вес (кг):*
+                  <input class="form__field" type="text" name="weight" id="weight" required>
+                </label>
+                <label class="form__label" for="age">Возраст (лет):
+                  <input class="form__field" type="text" name="age" id="age">
+                </label>
+              </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--goal">
+              <div class="form__fieldset-container">
               <legend class="visually-hidden">Цель подбора питания</legend>
-              <ul class="form__list">
-                <li class="form__list-item">
-                  <label class="form__control">
-                    <input class="visually-hidden form__control-input" type="radio" name="goal" value="slim">
-                    <span class="form__control-mark form__control-mark--radio"></span>
-                    <span class="form__control-label">Похудение</span>
-                  </label>
-                </li>
-                <li class="form__list-item">
-                  <label class="form__control">
-                    <input class="visually-hidden form__control-input" type="radio" name="goal" value="weight-gain">
-                    <span class="form__control-mark form__control-mark--radio"></span>
-                    <span class="form__control-label">Набор массы</span>
-                  </label>
-                </li>
-                <li class="form__list-item">
-                  <label class="form__control">
-                    <input class="visually-hidden form__control-input" type="radio" name="goal" value="need-advice">
-                    <span class="form__control-mark form__control-mark--radio"></span>
-                    <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
+                <ul class="form__list">
+                  <li class="form__list-item">
+                    <label class="form__control">
+                      <input class="visually-hidden form__control-input" type="radio" name="goal" value="slim">
+                      <span class="form__control-mark form__control-mark--radio"></span>
+                      <span class="form__control-label">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="form__list-item">
+                    <label class="form__control">
+                      <input class="visually-hidden form__control-input" type="radio" name="goal" value="weight-gain">
+                      <span class="form__control-mark form__control-mark--radio"></span>
+                      <span class="form__control-label">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="form__list-item">
+                    <label class="form__control">
+                      <input class="visually-hidden form__control-input" type="radio" name="goal" value="need-advice">
+                      <span class="form__control-mark form__control-mark--radio"></span>
+                      <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+               </div>
             </fieldset>
           </div>
           <fieldset class="form__fieldset form__fieldset--contacts">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
-            <label class="form__label" for="email">E-mail:*
-              <input type="email" name="email" id="email" required>
-            </label>
-            <label class="form__label" for="phone">Телефон:*
-              <input type="tel" name="phone" id="phone" required>
-            </label>
+            <div class="form__fieldset-container">
+              <label class="form__label" for="email">E-mail:*
+                <input type="email" name="email" id="email" required>
+              </label>
+              <label class="form__label" for="phone">Телефон:*
+                <input type="tel" name="phone" id="phone" required>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Комментарий</legend>
-            <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота.</label>
-            <textarea id="comment" name="comment"></textarea>
+            <div class="form__fieldset-container">
+              <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота.</label>
+              <textarea id="comment" name="comment"></textarea>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Дополнительно</legend>
-            <ul class="form__list form__list--extra">
-              <li class="form__list-item">
-                <label class="form__list-item form__list-item--checkbox">
-                  <input class="visually-hidden form__control-input" type="checkbox" name="sweetener">
-                  <span class="form__control-mark form__control-mark--checkbox"></span>
-                  <span class="form__control-label">сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="form__list-item">
-                <label class="form__list-item form__list-item--checkbox">
-                  <input class="visually-hidden form__control-input" type="checkbox" name="water">
-                  <span class="form__control-mark form__control-mark--checkbox"></span>
-                  <span class="form__control-label">питьевая вода</span>
-                </label>
-              </li>
-              <li class="form__list-item">
-                <label class="form__list-item form__list-item--checkbox">
-                  <input class="visually-hidden form__control-input" type="checkbox" name="milk">
-                  <span class="form__control-mark form__control-mark--checkbox"></span>
-                  <span class="form__control-label">молоко</span>
-                </label>
-              </li>
-              <li class="form__list-item">
-                <label class="form__list-item form__list-item--checkbox">
-                  <input class="visually-hidden form__control-input" type="checkbox" name="vitamins">
-                  <span class="form__control-mark form__control-mark--checkbox"></span>
-                  <span class="form__control-label">витамины</span>
-                </label>
-              </li>
-            </ul>
+            <div class="form__fieldset-container">
+              <ul class="form__list form__list--extra">
+                <li class="form__list-item">
+                  <label class="form__list-item form__list-item--checkbox">
+                    <input class="visually-hidden form__control-input" type="checkbox" name="sweetener">
+                    <span class="form__control-mark form__control-mark--checkbox"></span>
+                    <span class="form__control-label">сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="form__list-item form__list-item--checkbox">
+                    <input class="visually-hidden form__control-input" type="checkbox" name="water">
+                    <span class="form__control-mark form__control-mark--checkbox"></span>
+                    <span class="form__control-label">питьевая вода</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="form__list-item form__list-item--checkbox">
+                    <input class="visually-hidden form__control-input" type="checkbox" name="milk">
+                    <span class="form__control-mark form__control-mark--checkbox"></span>
+                    <span class="form__control-label">молоко</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="form__list-item form__list-item--checkbox">
+                    <input class="visually-hidden form__control-input" type="checkbox" name="vitamins">
+                    <span class="form__control-mark form__control-mark--checkbox"></span>
+                    <span class="form__control-label">витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <div class="form__submit-wrap">
             <button class="form__submit button button--primary" type="submit">отправить заявку</button>

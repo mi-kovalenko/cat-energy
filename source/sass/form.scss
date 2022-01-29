@@ -1,6 +1,5 @@
 .form__fieldset {
-  display: flex;
-  flex-direction: column;
+  padding: 0;
   border: none;
 
   &--info {
@@ -12,6 +11,12 @@
     color: var(--special_dark-grey-2);
     border-bottom: 1px solid #d9d9d9;
   }
+}
+
+.form__fieldset-container {
+  @include container;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__legend {
