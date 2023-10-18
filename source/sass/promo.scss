@@ -4,7 +4,7 @@
 
 .promo__section-container {
   @include container;
-  background-image: url("../../img/promo-background.jpg");
+  background-image: url("../img/promo-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -73,7 +73,7 @@
   .promo {
     width: 100%;
     min-height: 696px;
-    background-image: url("../../img/promo-background.jpg");
+    background-image: url("../img/promo-background.jpg");
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
