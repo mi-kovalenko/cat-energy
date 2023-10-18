@@ -2,6 +2,12 @@
   @include container;
 }
 
+@media (min-width: $tablet-width) {
+  .goals {
+    margin-bottom: 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .goals {
     display: grid;
