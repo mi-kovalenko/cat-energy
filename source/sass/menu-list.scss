@@ -30,8 +30,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .menu-list {
+    background-color: transparent;
+    gap: 20px;
+  }
+
   .menu-list__link {
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      color: #ffffff;
+    }
   }
 }
