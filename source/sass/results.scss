@@ -48,9 +48,29 @@
 }
 
 @media (min-width: $tablet-width) {
+  .results__heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .results__wrap {
     display: flex;
     justify-content: space-between;
+  }
+
+  .results__figure {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .results__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .results__cost {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

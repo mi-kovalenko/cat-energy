@@ -17,6 +17,8 @@
 
     display: flex;
     justify-content: space-between;
+    padding: 24px 30px;
+    // почему миксин перебивает эту строчку с паддингами?
     border: none;
   }
 

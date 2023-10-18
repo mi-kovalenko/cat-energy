@@ -4,10 +4,6 @@
   padding: 0;
   background-color: #ffffff;
   list-style-type: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
 }
 
 .menu-list__item {
@@ -25,4 +21,17 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-list__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

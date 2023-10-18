@@ -6,3 +6,10 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .gallery__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
