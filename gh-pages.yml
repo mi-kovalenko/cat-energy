@@ -25,7 +25,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "<youremail>@example.com"
-          git checkout gh-pages  # or your designated branch
+          git checkout main  # or your designated branch
           git rm -rf .
           cp -r dist/* .
           git add .
