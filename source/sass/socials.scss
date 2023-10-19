@@ -10,6 +10,19 @@
 
 .socials__item {
   margin: 0 18px;
+
+  &:hover .socials__link {
+    svg path {
+      fill: #2E368F;
+    }
+
+    &:last-child svg path {
+      fill: rgb(255, 255, 255);
+      stroke: #2E368F;
+      stroke-width: 2px;
+    }
+
+  }
 }
 
 @media (min-width: $tablet-width) {
