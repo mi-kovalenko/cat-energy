@@ -1,1 +1,5 @@
-# Личный проект «Кэт энерджи»
+Cat Energy online-shop, adaptive design
+
+- index page
+- catalog page
+- order form

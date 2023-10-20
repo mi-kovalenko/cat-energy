@@ -55,10 +55,28 @@
 .form__field {
   width: 100%;
   height: 46px;
-  color: #444444;
+  padding: 0 10px;
+  color: var(--special_dark-grey);
+  font-family: Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
   border: 1px solid #E7E7E7;
-  border-radius: 2px;
+  border-radius: 0;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--special_dark-grey);
+  }
 }
+
+textarea.form__field {
+  padding: 10px;
+}
+
+
 
 .form__control {
   display: flex;
@@ -78,7 +96,7 @@
       transform: translate(35%, 45%);
       width: 18px;
       height: 18px;
-      background-color: #68B738;
+      background-color: var(--basic_green);
       border-radius: 50%;
     }
 
@@ -96,7 +114,7 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid var(--special_grey);
 
 
   &--radio {
