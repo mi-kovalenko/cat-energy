@@ -1,8 +1,10 @@
 .product-card {
+  margin-bottom: 30px;
   border-bottom: 1px solid var(--basic-special_grey-2);
 }
 
 .product-card__link {
+  margin-bottom: 10px;
   text-decoration: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -25,8 +27,16 @@
 .product-card__info-string {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 9px;
+  margin-bottom: 3px;
+  color: var(--special_dark-grey);
+  text-align: center;
+  font-family: Arial;
   font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 16px;
+  border-bottom: 1px solid var(--basic_grey);
 }
 
 @media (min-width: $tablet-width) {

@@ -61,6 +61,12 @@
     gap: 20px;
     animation: none;
   }
+
+  .menu-list__item {
+    &--current {
+      border-bottom: 1px solid var(--basic_green);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
