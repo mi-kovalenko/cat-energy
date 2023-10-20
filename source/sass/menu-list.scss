@@ -1,10 +1,41 @@
 .menu-list {
   display: none;
+  position: absolute;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   list-style-type: none;
+  animation: growUp 300ms ease-in-out forwards;
+  transform-origin: top center;
+
+  &.shown {
+    display: block;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+  }
 }
+
+@keyframes growDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes growUp {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 
 .menu-list__item {
   padding: 22px 0 24px 0;
@@ -26,7 +57,9 @@
 @media (min-width: $tablet-width) {
   .menu-list {
     display: flex;
+    position: static;
     gap: 20px;
+    animation: none;
   }
 }
 

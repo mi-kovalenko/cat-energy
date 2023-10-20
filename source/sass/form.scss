@@ -141,7 +141,18 @@ textarea.form__field {
 }
 
 @media (min-width: $tablet-width) {
+  .form__fieldset {
+    &--goal {
+      padding: 0 30px;
+      border: 1px solid #d9d9d9;
+      border-top: none;
+    }
+  }
   .form__list {
+    &-item:last-child {
+      margin-bottom: 0;
+    }
+
     &--extra {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -150,6 +161,11 @@ textarea.form__field {
 
   .form__submit-wrap {
     display: flex;
+    gap: 40px;
+  }
+
+  .form__submit {
+    width: 50%;
   }
 }
 

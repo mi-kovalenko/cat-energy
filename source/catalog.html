@@ -16,25 +16,33 @@
     <header class="header">
       <div class="header__container">
         <a class="header__logo-pic" href="index.html">
-          <img src="img/logo-img.svg" width="34" height="37" alt="Логотип Кэт Энерджи.">
+          <img src="img/logo-img.svg" width="34" height="37" alt="Cat Energy Logo.">
         </a>
         <a class="header__logo-text" href="index.html">
-          <img src="img/logo-text.svg" width="100" height="18" alt="Логотип Кэт Энерджи.">
+          <img src="img/logo-text.svg" width="100" height="18" alt="Cat Energy Logo.">
         </a>
-        <button class="header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="header__toggle-container">
+          <div class="header__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="visually-hidden">Open Menu</span>
+          </div>
+          <button id="burger-menu" class="header__toggle-button" type="button" >
+          </button>
+        </div>
       </div>
       <nav class="header__nav">
         <ul class="header__menu menu-list">
           <li class="menu-list__item menu-list__item--current">
-            <a class="menu-list__link" href="index.html">Главная</a>
+            <a class="menu-list__link" href="index.html">Home</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="menu-list__link" href="catalog.html">Product Catalog</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="form.html">Подбор программы</a>
+            <a class="menu-list__link" href="form.html">Program Selector</a>
           </li>
         </ul>
       </nav>
@@ -172,7 +180,7 @@
         </div>
       </section>
       <section class="franchising">
-        <div class="franchising__container franchising__container--index">
+        <div class="franchising__container franchising__container--inner">
           <h2 class="franchising__heading">We are open for franchising!</h2>
           <address class="franchising__address">
             <p>у34/36, Archil Tsagareli St, Tbilisi 0194</p>

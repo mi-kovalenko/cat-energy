@@ -23,8 +23,23 @@
   line-height: 18px;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .section-form {
-    padding-top: 77px;
+    padding: 0 70px;
+    margin-bottom: 50px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .section-form {
+    margin-top: 70px;
+  }
+
+  .section-form__heading {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+  }
+}
+

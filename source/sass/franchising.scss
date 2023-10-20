@@ -5,7 +5,8 @@
 .franchising__container {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
+  align-items: center;
+  padding: 20px;
 
   &--index {
     background-color: #ffffff;
@@ -52,12 +53,8 @@ iframe {
   }
 
   .franchising__container {
-    padding: 20px 40px;
-    position: absolute;
-    top: 50%;
-    width: 300px;
-    transform: translate(40px, -50%);
-    z-index: 2;
+    padding: 20px 70px;
+    background-color: var(--basic_grey);
   }
 
   .franchising__heading {
@@ -82,6 +79,12 @@ iframe {
 
 @media (min-width: $desktop-width) {
   .franchising__container {
+    padding: 20px 40px;
+    position: absolute;
+    top: 50%;
     width: 400px;
+    transform: translate(40px, -50%);
+    z-index: 2;
+    background-color: #ffffff;
   }
 }
