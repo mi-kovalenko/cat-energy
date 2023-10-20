@@ -176,14 +176,33 @@ textarea.form__field {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 60px;
+
+    .form__fieldset {
+      width: 40%;
+    }
   }
 
   .form__fieldset {
-    width: 40%;
+    width: 100%;
     margin-bottom: 60px;
+    gap: 20px;
+
+    &--info {
+      border: none;
+    }
 
     &--contacts {
       flex-direction: row;
+      width: 100%;
+
+        .form__fieldset-container {
+          flex-direction: row;
+          gap: 20px;
+        }
+
+      .form__label {
+        width: 100%;
+      }
     }
 
     &--goal {
@@ -199,6 +218,7 @@ textarea.form__field {
 
   .form__list {
     &--extra {
+      width: 100%;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
@@ -216,5 +236,9 @@ textarea.form__field {
 
   .form__submit-wrap {
     @include container;
+  }
+
+  textarea.form__field {
+    height: 100px;
   }
 }
