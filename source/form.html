@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
   </head>
   <body>
     <header class="header">
@@ -61,21 +67,21 @@
                     <label class="form__control">
                       <input class="visually-hidden form__control-input" type="radio" name="goal" value="slim">
                       <span class="form__control-mark form__control-mark--radio"></span>
-                      <span class="form__control-label">Похудение</span>
+                      <span class="form__label">Похудение</span>
                     </label>
                   </li>
                   <li class="form__list-item">
                     <label class="form__control">
                       <input class="visually-hidden form__control-input" type="radio" name="goal" value="weight-gain">
                       <span class="form__control-mark form__control-mark--radio"></span>
-                      <span class="form__control-label">Набор массы</span>
+                      <span class="form__label">Набор массы</span>
                     </label>
                   </li>
                   <li class="form__list-item">
                     <label class="form__control">
                       <input class="visually-hidden form__control-input" type="radio" name="goal" value="need-advice">
                       <span class="form__control-mark form__control-mark--radio"></span>
-                      <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
+                      <span class="form__label">Не знаю (Нужен ваш совет)</span>
                     </label>
                   </li>
                 </ul>
@@ -86,10 +92,10 @@
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <div class="form__fieldset-container">
               <label class="form__label" for="email">E-mail:*
-                <input type="email" name="email" id="email" required>
+                <input class="form__field" type="email" name="email" id="email" required>
               </label>
               <label class="form__label" for="phone">Телефон:*
-                <input type="tel" name="phone" id="phone" required>
+                <input class="form__field" type="tel" name="phone" id="phone" required>
               </label>
             </div>
           </fieldset>
@@ -97,7 +103,7 @@
             <legend class="form__legend">Комментарий</legend>
             <div class="form__fieldset-container">
               <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота.</label>
-              <textarea id="comment" name="comment"></textarea>
+              <textarea class="form__field" id="comment" name="comment"></textarea>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
@@ -105,28 +111,28 @@
             <div class="form__fieldset-container">
               <ul class="form__list form__list--extra">
                 <li class="form__list-item">
-                  <label class="form__list-item form__list-item--checkbox">
+                  <label class="form__label form__list-item form__list-item--checkbox">
                     <input class="visually-hidden form__control-input" type="checkbox" name="sweetener">
                     <span class="form__control-mark form__control-mark--checkbox"></span>
                     <span class="form__control-label">сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form__list-item">
-                  <label class="form__list-item form__list-item--checkbox">
+                  <label class="form__label form__list-item form__list-item--checkbox">
                     <input class="visually-hidden form__control-input" type="checkbox" name="water">
                     <span class="form__control-mark form__control-mark--checkbox"></span>
                     <span class="form__control-label">питьевая вода</span>
                   </label>
                 </li>
                 <li class="form__list-item">
-                  <label class="form__list-item form__list-item--checkbox">
+                  <label class="form__label form__list-item form__list-item--checkbox">
                     <input class="visually-hidden form__control-input" type="checkbox" name="milk">
                     <span class="form__control-mark form__control-mark--checkbox"></span>
                     <span class="form__control-label">молоко</span>
                   </label>
                 </li>
                 <li class="form__list-item">
-                  <label class="form__list-item form__list-item--checkbox">
+                  <label class="form__label form__list-item form__list-item--checkbox">
                     <input class="visually-hidden form__control-input" type="checkbox" name="vitamins">
                     <span class="form__control-mark form__control-mark--checkbox"></span>
                     <span class="form__control-label">витамины</span>
@@ -142,16 +148,15 @@
         </form>
       </section>
       <section class="franchising">
-        <div class="franchising__container franchising__container--inner">
-          <h2 class="franchising__heading">приглашаем к сотрудничеству дилеров!</h2>
+        <div class="franchising__container franchising__container--index">
+          <h2 class="franchising__heading">We are open for franchising!</h2>
           <address class="franchising__address">
-            <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p>у34/36, Archil Tsagareli St, Tbilisi 0194</p>
           </address>
         </div>
         <div class="franchising__map">
           <h2 class="visually-hidden">Карта расположения наших магазинов.</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300289!2d30.320858715782983!3d59.93871916905453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1638417570007!5m2!1sen!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+          <div id="map"></div>
       </section>
     </main>
     <footer class="footer">
@@ -189,5 +194,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/map.js"></script>
   </body>
 </html>

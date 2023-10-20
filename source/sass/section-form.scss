@@ -1,4 +1,5 @@
 .section-form {
+  @include container;
   width: 100%;
   font-family: "Oswald", sans-serif;
   color: #000000;
@@ -24,6 +25,6 @@
 
 @media (min-width: $desktop-width) {
   .section-form {
-    padding-top: 188px;
+    padding-top: 77px;
   }
 }

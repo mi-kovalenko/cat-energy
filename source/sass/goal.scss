@@ -64,7 +64,6 @@
       background-size: 267px;
     }
   }
-  // мне не очень нравится эта конструкция, честно говоря
 
   .goal__heading {
     padding: 0;
@@ -87,7 +86,7 @@
 
 @media (min-width: $desktop-width) {
   .goal {
-    padding: 77px 51px 55px 52px;
+    padding: 60px 50px 30px;
 
     &--slim {
       background-image: url("../img/cat-slim.svg");
@@ -104,5 +103,6 @@
 
   .goal__heading {
     margin-left: 162px;
+    margin-bottom: 80px;
   }
 }
