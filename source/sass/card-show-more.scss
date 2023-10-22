@@ -1,5 +1,25 @@
 .card-show-more {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 78px;
   border-bottom: 1px solid var(--basic-special_grey-2);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 30px);
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/plus.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
 }
 
 .card-show-more__heading {
@@ -15,4 +35,43 @@
 .card-show-more__description {
   font-size: 12px;
   line-height: 16px;
+}
+
+.card-show-more__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .card-show-more {
+    border: 1px solid var(--basic-special_grey-2);
+    padding: 40px;
+    padding-top: 160px;
+    margin-bottom: 20px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, 50px);
+    }
+  }
+
+  .card-show-more__heading {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px
+  }
+
+  .card-show-more__description {
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .card-show-more__button {
+    margin-top: 20%;
+  }
 }

@@ -4,9 +4,14 @@
   list-style-type: none;
 }
 
+.products-list__item {
+  min-height: 200px;
+}
+
 @media (min-width: $tablet-width) {
   .products-list {
     display: grid;
+    gap: 140px 60px;
     grid-template-columns: 1fr 1fr;
   }
 }

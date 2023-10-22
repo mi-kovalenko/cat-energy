@@ -19,3 +19,9 @@ document.addEventListener("click", function(e) {
   }
 })
 
+const before = document.getElementById("before")
+slider = document.getElementById("range-slider");
+function moveDivisor() {
+	before.style.width = slider.value+"%";
+}
+

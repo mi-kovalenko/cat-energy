@@ -1,4 +1,6 @@
 .extra-item {
+  padding-bottom: 30px;
+  margin-bottom: 15px;
   border-bottom: 1px solid var(--special_grey);
 }
 
@@ -30,5 +32,11 @@
   .extra-item {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding-bottom: 20px;
+  }
+
+  .extra-item__wrapper {
+    align-items: center;
   }
 }

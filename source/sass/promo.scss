@@ -67,6 +67,8 @@
   }
 
   .promo__slogan {
+    z-index: 2;
+    width: 250px;
     margin-bottom: 52px;
     padding-left: 90px;
     color: #000000;
@@ -78,7 +80,11 @@
   .promo__img {
     order: 10;
     margin-top: -83px;
-    margin-left: 300px;
+    margin-left: 200px;
+  }
+
+  picture {
+    order: 4;
   }
 
   .promo__button {
@@ -96,10 +102,14 @@
   .promo {
     width: 100%;
     min-height: 696px;
-    background-image: url("../img/promo-background.jpg");
+    background-image: url("../img/index-background-desktop.png");
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.png");
+    }
   }
 
   .promo__section-container {
@@ -109,8 +119,17 @@
     background-color: transparent;
   }
 
-  .promo__img {
+  picture {
+    order: initial;
     position: absolute;
     right: 0;
-    width: 50%;  }
+    width: 50%;
+  }
+
+  .promo__img {
+    position: absolute;
+    width: 100%;
+    order: initial;
+    right: 0;
+  }
 }
