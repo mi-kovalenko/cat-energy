@@ -33,6 +33,13 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding-top: 70px;
+    padding: 70px;
+  }
+
+  .catalog__heading {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
   }
 }
