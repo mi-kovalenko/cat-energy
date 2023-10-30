@@ -1,0 +1,21 @@
+.guide {
+  @include container;
+  margin-bottom: 50px;
+}
+
+.guide__heading {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .guide__heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

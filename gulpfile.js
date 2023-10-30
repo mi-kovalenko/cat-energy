@@ -39,7 +39,12 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+export const copy = () => {
+  return gulp.src('source/**/*', { base: 'source' })
+    .pipe(gulp.dest('docs'));
+};
+
 
 export default gulp.series(
-  styles, server, watcher
+  styles, server, watcher, copy
 );

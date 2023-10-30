@@ -1,0 +1,17 @@
+.goals {
+  @include container;
+}
+
+@media (min-width: $tablet-width) {
+  .goals {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}

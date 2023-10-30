@@ -1,0 +1,16 @@
+.credits {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .credits {
+    padding: 0;
+  }
+
+  .credits__organization {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

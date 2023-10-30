@@ -1,0 +1,112 @@
+.goal {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--basic_grey);
+}
+
+.goal__heading {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 10px 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  &--slim {
+    padding-left: 70px;
+    background-image: url("../img/cat-slim.svg");
+    background-size: 50px;
+  }
+
+  &--pro {
+    padding-left: 80px;
+    background-image: url("../img/cat-pro.svg");
+    background-size: 67px;
+  }
+}
+
+.goal__text {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.goal__link {
+  display: block;
+  padding-top: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  border-top: 1px solid #d9d9d9;
+}
+
+@media (min-width: $tablet-width) {
+  .goal {
+    margin-bottom: 30px;
+    padding: 77px 316px 53px 53px;
+    background-position: 90%;
+    background-repeat: no-repeat;
+
+    &--slim {
+      background-image: url("../img/cat-slim.svg");
+      background-size: 200px;
+    }
+
+    &--pro {
+      background-image: url("../img/cat-pro.svg");
+      background-size: 267px;
+    }
+  }
+
+  .goal__heading {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+    background-image: none;
+  }
+
+  .goal__text {
+    width: 340px;
+    margin-bottom: 33px;
+  }
+
+  .goal__link {
+    border: none;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goal {
+    padding: 60px 50px 30px;
+
+    &--slim {
+      background-image: url("../img/cat-slim.svg");
+      background-size: 100px;
+      background-position: 52px 41px;
+    }
+
+    &--pro {
+      background-image: url("../img/cat-pro.svg");
+      background-size: 134px;
+      background-position: 41px 47px;
+    }
+  }
+
+  .goal__heading {
+    margin-left: 162px;
+    margin-bottom: 80px;
+  }
+
+  .goal__text {
+    font-size: 16px;
+  }
+}

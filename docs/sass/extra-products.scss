@@ -1,0 +1,14 @@
+@media (min-width: $desktop-width) {
+  .extra-products {
+    display: flex;
+  }
+
+  .extra-products__list {
+    flex-grow: 1;
+    margin-right: 80px;
+  }
+
+  .extra-products__offer {
+    width: 245px;
+  }
+}

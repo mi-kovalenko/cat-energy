@@ -1,0 +1,36 @@
+.socials {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  list-style-type: none;
+}
+
+.socials__item {
+  margin: 0 18px;
+
+  &:hover .socials__link {
+    svg path {
+      fill: #2E368F;
+    }
+
+    &:last-child svg path {
+      fill: rgb(255, 255, 255);
+      stroke: #2E368F;
+    }
+
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    padding: 0;
+    border: none;
+  }
+
+  .socials__item {
+    margin: 0 13px;
+  }
+}

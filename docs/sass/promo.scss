@@ -1,0 +1,135 @@
+.promo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.promo__section-container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #62a53a;
+  background-image: url("../img/promo-background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+.promo__heading {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__slogan {
+  margin: 0;
+  margin-bottom: 29px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo__img {
+  width: 70%;
+}
+
+.promo__button {
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__section-container {
+    align-items: start;
+    padding-top: 20px;
+    background-image: none;
+    background-color: #ffffff;
+
+  }
+
+  .promo__heading {
+    margin-bottom: 42px;
+    padding: 0 90px;
+    color: #000000;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo__slogan {
+    z-index: 2;
+    width: 250px;
+    margin-bottom: 52px;
+    padding-left: 90px;
+    color: #000000;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .promo__img {
+    order: 10;
+    margin-top: -83px;
+    margin-left: 200px;
+  }
+
+  .promo__img-container {
+    order: 4;
+  }
+
+  .promo__button {
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    margin-left: 90px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 100%;
+    min-height: 696px;
+    background-image: url("../img/index-background-desktop.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.png");
+    }
+  }
+
+  .promo__section-container {
+    position: relative;
+    padding-top: 223px;
+    padding-right: calc(50% + 115px);
+    background-color: transparent;
+  }
+
+  .promo__img-container {
+    order: initial;
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  .promo__img {
+    position: absolute;
+    width: 100%;
+    order: initial;
+    right: 0;
+  }
+}

@@ -1,0 +1,131 @@
+.gallery {
+  position: relative;
+  min-height: 280px;
+  width: 320px;
+  padding: 45px 0;
+  margin: 0 auto;
+}
+
+.gallery__after {
+  // position: absolute;
+  // top: 82px;
+  // left: 56px;
+  margin: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: 280px;
+  background-image: url(../img/cat-skinny.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery__before {
+  position: relative;
+  z-index: 2;
+  min-height: 280px;
+  width: 60%;
+  background-image: url(../img/cat-fat.png);
+  background-size: cover;
+  background-color: #EAEAEA;
+}
+
+.gallery__slideshow {
+  margin-bottom: 15px;
+}
+
+.gallery__range-slider {
+  display: flex;
+  align-items: center;
+}
+
+.gallery__range-bar {
+  width: 100%
+}
+.gallery__label {
+  margin: 0 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+
+  &::-webkit-slider-runnable-track {
+    height: 6px;
+    border-radius: 6px;
+    background: #DCDCDC;
+  }
+
+  &::-moz-range-track {
+    height: 6px;
+    border-radius: 6px;
+    background: #DCDCDC;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: var(--basic_green);
+    border-radius: 50%;
+    transform: translateY(-4px);
+  }
+
+  &::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: var(--basic_green);
+    border-radius: 50%;
+    transform: translateY(-4px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    padding: 60px;
+  }
+
+  .gallery__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  // input[type="range"] {
+  //   &::-webkit-slider-thumb {
+  //     height: 35px;
+  //     width: 35px;
+  //     transform: translateY(-13px);
+  //   }
+
+  //   &::-moz-range-thumb {
+  //     height: 35px;
+  //     width: 35px;
+  //     transform: translateY(-13px);
+  //   }
+  // }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    width: 600px;
+  }
+
+  .gallery__before {
+    min-height: 344px;
+    left: -61px;
+  }
+
+  .gallery__after {
+    min-height: 344px;
+  }
+}

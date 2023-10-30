@@ -3,79 +3,93 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
   </head>
   <body>
     <header class="header">
       <div class="header__container">
         <a class="header__logo-pic" href="index.html">
-          <img src="img/logo-img.svg" width="34" height="37" alt="Логотип Кэт Энерджи.">
+          <img src="img/logo-img.svg" width="34" height="37" alt="Cat Energy Logo.">
         </a>
         <a class="header__logo-text" href="index.html">
-          <img src="img/logo-text.svg" width="100" height="18" alt="Логотип Кэт Энерджи.">
+          <img src="img/logo-text.svg" width="100" height="18" alt="Cat Energy Logo.">
         </a>
-        <button class="header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="header__toggle-container">
+          <div class="header__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="visually-hidden">Open Menu</span>
+          </div>
+          <button id="burger-menu" class="header__toggle-button" type="button" >
+          </button>
+        </div>
       </div>
       <nav class="header__nav">
         <ul class="header__menu menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html">Home</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="catalog.html">Product Catalog</a>
+          </li>
           <li class="menu-list__item menu-list__item--current">
-            <a class="menu-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="form.html">Подбор программы</a>
+            <a class="menu-list__link" href="form.html">Program Selector</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-container">
       <section class="section-form">
-        <h1 class="section-form__heading">Подбор программы</h1>
-        <p class="section-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <h1 class="section-form__heading">Program Selector</h1>
+        <p class="section-form__description">Fill out the form, and we'll select a feeding program for your cat</p>
         <form class="section-form__form form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__fieldset-wrapper">
             <fieldset class="form__fieldset form__fieldset--info">
               <div class="form__fieldset-container">
-                <legend class="visually-hidden">Информация о коте.</legend>
-                <label class="form__label" for="name">ИМЯ:*
+                <legend class="visually-hidden">Cat Information</legend>
+                <label class="form__label" for="name">Name:*
                   <input class="form__field" type="text" name="name" id="name" required>
                 </label>
-                <label class="form__label" for="weight">Вес (кг):*
+                <label class="form__label" for="weight">Weight (kg):*
                   <input class="form__field" type="text" name="weight" id="weight" required>
                 </label>
-                <label class="form__label" for="age">Возраст (лет):
+                <label class="form__label" for="age">Age (years):
                   <input class="form__field" type="text" name="age" id="age">
                 </label>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--goal">
               <div class="form__fieldset-container">
-                <legend class="visually-hidden">Цель подбора питания</legend>
+                <legend class="visually-hidden">Feeding Goal</legend>
                 <ul class="form__list">
                   <li class="form__list-item">
                     <label class="form__control">
                       <input class="visually-hidden form__control-input" type="radio" name="goal" value="slim">
                       <span class="form__control-mark form__control-mark--radio"></span>
-                      <span class="form__control-label">Похудение</span>
+                      <span class="form__label">Weight Loss</span>
                     </label>
                   </li>
                   <li class="form__list-item">
                     <label class="form__control">
                       <input class="visually-hidden form__control-input" type="radio" name="goal" value="weight-gain">
                       <span class="form__control-mark form__control-mark--radio"></span>
-                      <span class="form__control-label">Набор массы</span>
+                      <span class="form__label">Weight Gain</span>
                     </label>
                   </li>
                   <li class="form__list-item">
                     <label class="form__control">
                       <input class="visually-hidden form__control-input" type="radio" name="goal" value="need-advice">
                       <span class="form__control-mark form__control-mark--radio"></span>
-                      <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
+                      <span class="form__label">Don't Know (Need Your Advice)</span>
                     </label>
                   </li>
                 </ul>
@@ -83,75 +97,74 @@
             </fieldset>
           </div>
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <legend class="form__legend">Contact Information (Cat Owner)</legend>
             <div class="form__fieldset-container">
               <label class="form__label" for="email">E-mail:*
-                <input type="email" name="email" id="email" required>
+                <input class="form__field" type="email" name="email" id="email" required>
               </label>
-              <label class="form__label" for="phone">Телефон:*
-                <input type="tel" name="phone" id="phone" required>
+              <label class="form__label" for="phone">Phone:*
+                <input class="form__field" type="tel" name="phone" id="phone" required>
               </label>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend">Комментарий</legend>
+            <legend class="form__legend">Comment</legend>
             <div class="form__fieldset-container">
-              <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота.</label>
-              <textarea id="comment" name="comment"></textarea>
+              <label class="visually-hidden" for="comment">Tell us about your cat's habits.</label>
+              <textarea class="form__field" id="comment" name="comment"></textarea>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Дополнительно</legend>
+          <fieldset class="form__fieldset form__fieldset--options">
+            <legend class="form__legend">Additional Options</legend>
             <div class="form__fieldset-container">
               <ul class="form__list form__list--extra">
                 <li class="form__list-item">
-                  <label class="form__list-item form__list-item--checkbox">
+                  <label class="form__label form__list-item form__list-item--checkbox">
                     <input class="visually-hidden form__control-input" type="checkbox" name="sweetener">
                     <span class="form__control-mark form__control-mark--checkbox"></span>
-                    <span class="form__control-label">сахарозаменитель</span>
+                    <span class="form__control-label">Sweetener</span>
                   </label>
                 </li>
                 <li class="form__list-item">
-                  <label class="form__list-item form__list-item--checkbox">
+                  <label class="form__label form__list-item form__list-item--checkbox">
                     <input class="visually-hidden form__control-input" type="checkbox" name="water">
                     <span class="form__control-mark form__control-mark--checkbox"></span>
-                    <span class="form__control-label">питьевая вода</span>
+                    <span class="form__control-label">Drinking Water</span>
                   </label>
                 </li>
                 <li class="form__list-item">
-                  <label class="form__list-item form__list-item--checkbox">
+                  <label class="form__label form__list-item form__list-item--checkbox">
                     <input class="visually-hidden form__control-input" type="checkbox" name="milk">
                     <span class="form__control-mark form__control-mark--checkbox"></span>
-                    <span class="form__control-label">молоко</span>
+                    <span class="form__control-label">Milk</span>
                   </label>
                 </li>
                 <li class="form__list-item">
-                  <label class="form__list-item form__list-item--checkbox">
+                  <label class="form__label form__list-item form__list-item--checkbox">
                     <input class="visually-hidden form__control-input" type="checkbox" name="vitamins">
                     <span class="form__control-mark form__control-mark--checkbox"></span>
-                    <span class="form__control-label">витамины</span>
+                    <span class="form__control-label">Vitamins</span>
                   </label>
                 </li>
               </ul>
             </div>
           </fieldset>
           <div class="form__submit-wrap">
-            <button class="form__submit button button--primary" type="submit">отправить заявку</button>
-            <p class="form__tip">* — Обязательные поля</p>
+            <button class="form__submit button button--primary" type="submit">Submit Application</button>
+            <p class="form__tip">* - Required fields</p>
           </div>
         </form>
       </section>
       <section class="franchising">
         <div class="franchising__container franchising__container--inner">
-          <h2 class="franchising__heading">приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="franchising__heading">We are open for franchising!</h2>
           <address class="franchising__address">
-            <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p>у34/36, Archil Tsagareli St, Tbilisi 0194</p>
           </address>
         </div>
         <div class="franchising__map">
           <h2 class="visually-hidden">Карта расположения наших магазинов.</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300289!2d30.320858715782983!3d59.93871916905453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1638417570007!5m2!1sen!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+          <div id="map"></div>
       </section>
     </main>
     <footer class="footer">
@@ -176,7 +189,7 @@
           </li>
           <li class="socials__item">
             <a class="socials__link" href="https://facebook.com/htmlacademy">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 1.8h-2.8c-1.2 0-2.3.5-3.2 1.3-.9.9-1.3 2-1.3 3.2V9H6.4v3.6h2.8v7.2h3.6v-7.2h2.8l.9-3.6h-3.7V6.3l.3-.6c.2-.2.4-.3.7-.3h2.7V1.8Z" stroke="#666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 1.8h-2.8c-1.2 0-2.3.5-3.2 1.3-.9.9-1.3 2-1.3 3.2V9H6.4v3.6h2.8v7.2h3.6v-7.2h2.8l.9-3.6h-3.7V6.3l.3-.6c.2-.2.4-.3.7-.3h2.7V1.8Z" stroke="#666" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
@@ -189,5 +202,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
