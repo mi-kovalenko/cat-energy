@@ -45,6 +45,10 @@
   text-decoration: none;
   color: #000000;
   border-top: 1px solid #d9d9d9;
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 @media (min-width: $tablet-width) {

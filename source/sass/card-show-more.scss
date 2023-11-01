@@ -75,3 +75,13 @@
     margin-top: 20%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .card-show-more {
+    padding-bottom: 20px;
+  }
+
+  .card-show-more__button {
+    margin-top: 30%;
+  }
+}

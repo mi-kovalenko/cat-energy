@@ -25,3 +25,23 @@ function moveDivisor() {
 	before.style.width = slider.value+"%";
 }
 
+
+const checkIsValid = (event) => {
+  console.log('Checking validity');
+  const fields = document.querySelectorAll('.form__field');
+  Array.from(fields).forEach(f => {
+    if (!f.checkValidity()) {
+      f.classList.add("form__field--error");
+    }
+  });
+}
+
+const form = document.querySelector('form');
+
+if (form) {
+  form.addEventListener('submit', checkIsValid);
+  console.log('Event listener attached');
+} else {
+  console.log('Form not found');
+}
+
