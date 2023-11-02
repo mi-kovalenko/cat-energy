@@ -71,6 +71,10 @@
     outline: none;
     border: 1px solid var(--special_dark-grey);
   }
+
+  &--error {
+    border: 2px solid var(--status_error);
+  }
 }
 
 textarea.form__field {
