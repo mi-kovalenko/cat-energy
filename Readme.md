@@ -5,3 +5,30 @@ Cat Energy online-shop, adaptive design
 - order form
 
 Deployment: https://mi-kovalenko.github.io/cat-energy/
+
+## Setup
+- download ZIP
+
+- via SSH:
+
+```bash
+git clone git@github.com:ena0berzerk/team-28.git
+```
+
+- via HTTPS:
+
+```bash
+git clone https://github.com/ena0berzerk/team-28.git
+```
+
+## Install
+
+```bash
+npm install
+```
+
+## Start & watch
+$ npm start
+
+## Simple build for production
+$ npm run build
