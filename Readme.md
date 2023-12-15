@@ -24,7 +24,7 @@ $ git clone https://github.com/ena0berzerk/team-28.git
 ## Install
 
 ```bash
-$ npm install
+$ npm i
 ```
 
 ## Start & watch
