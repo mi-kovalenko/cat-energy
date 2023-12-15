@@ -12,13 +12,13 @@ https://mi-kovalenko.github.io/cat-energy/
 - via SSH:
 
 ```bash
-$ git clone git@github.com:ena0berzerk/team-28.git
+$ git clone git@github.com:mi-kovalenko/cat-energy.git
 ```
 
 - via HTTPS:
 
 ```bash
-$ git clone https://github.com/ena0berzerk/team-28.git
+$ git clone https://github.com/mi-kovalenko/cat-energy.git
 ```
 
 ## Install
