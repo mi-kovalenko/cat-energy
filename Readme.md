@@ -1,10 +1,10 @@
-Cat Energy online-shop, adaptive design
+# Cat Energy online-shop, adaptive design
+## Deployment: 
+https://mi-kovalenko.github.io/cat-energy/
 
-- index page
-- catalog page
-- order form
-
-Deployment: https://mi-kovalenko.github.io/cat-energy/
+- index page, catalog page, order form with validation
+- before/after JS slider
+- OpenStreetMap API for an interactive map + custom marker 
 
 ## Setup
 - download ZIP
